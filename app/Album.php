@@ -10,9 +10,14 @@ class Album extends Model
     'title',
     'artist',
     'year',
+    'image_id',
   ];
 
   public function songs() {
     return $this->hasMany('App\Song');
+  }
+
+  public function image() {
+    return $this->belongsTo('App\Image');
   }
 }
