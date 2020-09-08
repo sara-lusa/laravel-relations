@@ -5,6 +5,8 @@
 <h2>Lista Canzoni</h2>
 <ul>
   @foreach ($album->songs as $song)
-    <li>{{$song->title}}</li>
+    <li>{{$song->title}}
+      <a href="{{route('song.show', $song)}}">Dettagli</a>
+    </li>
   @endforeach
 </ul>
