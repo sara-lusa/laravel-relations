@@ -2,7 +2,9 @@
 
 <ul>
   @foreach ($albums as $album)
-    <li>Titolo: {{$album->title}}
+    <li>
+      <img src="{{$album->image->url}}" alt="{{$album->title}}">
+      Titolo: {{$album->title}}
       <a href="{{route('album.show', $album)}}">Mostra Dettagli</a>
     </li>
   @endforeach

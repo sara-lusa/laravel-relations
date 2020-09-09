@@ -1,4 +1,5 @@
 <h1>Titolo Album: {{$album->title}}</h1>
+<img src="{{$album->image->url}}" alt="{{$album->title}}">
 <p>Artista: {{$album->artist}}</p>
 <p>Anno: {{$album->year}}</p>
 

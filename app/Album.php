@@ -17,6 +17,6 @@ class Album extends Model
   }
 
   public function image() {
-    return $this->belongsTo('App\Image');
+    return $this->hasOne('App\Image');
   }
 }
