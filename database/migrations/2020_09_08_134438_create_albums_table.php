@@ -18,9 +18,7 @@ class CreateAlbumsTable extends Migration
             $table->string('title');
             $table->string('artist');
             $table->integer('year');
-            // $table->unsignedBigInteger('image_id');
             $table->timestamps();
-            // $table->foreign('image_id')->references('id')->on('images');
         });
     }
 
