@@ -1,0 +1,35 @@
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3em;
+}
+
+ul {
+  list-style-type: none;
+}
+
+main li .album-cover {
+  height: 100px;
+  vertical-align: middle;
+  margin: 20px 10px;
+}
+
+main .single-album {
+  text-align: center;
+}
+
+main .single-album .album-cover {
+  height: 200px;
+}
+
+main .single-album .list-song {
+  margin-bottom: 10px;
+}
+
+main .single-song {
+  text-align: center;
+}
+
