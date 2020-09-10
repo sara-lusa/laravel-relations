@@ -3,7 +3,10 @@
   <div class="single-album">
     <h1>Titolo Album: {{$album->title}}</h1>
     <img class="album-cover" src="{{$album->image->url}}" alt="{{$album->title}}">
-    {{-- <p>Artista: {{$album->artist}}</p> --}}
+    {{-- {{dd($album->artists)}} --}}
+    @foreach ($album->artists as $artist)
+      <p>Artista: {{$artist->name}}</p>
+    @endforeach
     <p>Anno: {{$album->year}}</p>
 
     <h2>Lista Canzoni</h2>
