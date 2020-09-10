@@ -3,7 +3,7 @@
   <div class="single-album">
     <h1>Titolo Album: {{$album->title}}</h1>
     <img class="album-cover" src="{{$album->image->url}}" alt="{{$album->title}}">
-    <p>Artista: {{$album->artist}}</p>
+    {{-- <p>Artista: {{$album->artist}}</p> --}}
     <p>Anno: {{$album->year}}</p>
 
     <h2>Lista Canzoni</h2>
